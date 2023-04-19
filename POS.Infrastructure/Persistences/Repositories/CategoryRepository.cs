@@ -4,7 +4,6 @@ using POS.Infrastructure.Commons.Bases.Request;
 using POS.Infrastructure.Commons.Bases.Response;
 using POS.Infrastructure.Persistences.Contexts;
 using POS.Infrastructure.Persistences.Interfaces;
-using POS.Utilities.Static;
 
 namespace POS.Infrastructure.Persistences.Repositories
 {

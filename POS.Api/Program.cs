@@ -1,3 +1,4 @@
+using POS.Api.Extensions;
 using POS.Application.Extensions;
 using POS.Infrastructure.Extensions;
 
@@ -8,10 +9,12 @@ var configuration = builder.Configuration;
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); 
+//builder.Services.AddSwaggerGen(); 
+builder.Services.AddSwagger();
 
 builder.Services.AddInjectionInfrastructure(configuration);
 builder.Services.AddInjectionApplication(configuration);
+builder.Services.AddAuthentication(configuration);
 
 var app = builder.Build();
 
@@ -23,6 +26,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

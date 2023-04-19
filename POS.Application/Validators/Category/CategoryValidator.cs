@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using FluentValidation;
-using POS.Application.DTOs.Request;
+using POS.Application.DTOs.Category.Request;
 using System;
 using System.Collections.Generic;
 using System.Linq;

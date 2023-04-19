@@ -8,6 +8,9 @@ namespace POS.Infrastructure.Persistences.Contexts.Configurations
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
+            builder.HasKey(x => x.Id);
+            builder.Property(x => x.Id)
+                .HasColumnName("UserId");
             builder.Property(e => e.Email).IsUnicode(false);
 
             builder.Property(e => e.Image).IsUnicode(false);

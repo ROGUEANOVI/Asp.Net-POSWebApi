@@ -1,6 +1,6 @@
 ﻿using POS.Application.Commons.Bases;
-using POS.Application.DTOs.Request;
-using POS.Application.DTOs.Response;
+using POS.Application.DTOs.Category.Request;
+using POS.Application.DTOs.Category.Response;
 using POS.Infrastructure.Commons.Bases.Request;
 using POS.Infrastructure.Commons.Bases.Response;
 
